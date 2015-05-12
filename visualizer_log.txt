@@ -1,0 +1,81 @@
+Visualizer configurated
+Visualizer recieved a message: <message ProcName="ProcessTacts"/>
+Processing model tact
+Sending message to TemporalReasoner
+Configuring ESKernel
+Sending message to ESKernel
+Sending message to ESKernel
+Visualizer recieved a message: <message ProcName="ShowBB"/>
+Visualizer recieved a message: <message ProcName="ProcessTacts"/>
+Processing model tact
+Sending message to TemporalReasoner
+Configuring ESKernel
+Sending message to ESKernel
+Sending message to ESKernel
+Visualizer recieved a message: <message ProcName="ProcessTacts"/>
+Processing model tact
+Sending message to TemporalReasoner
+Configuring ESKernel
+Sending message to ESKernel
+Sending message to ESKernel
+Visualizer recieved a message: <message ProcName="ProcessTacts"/>
+Processing model tact
+Sending message to TemporalReasoner
+Configuring ESKernel
+Sending message to ESKernel
+Sending message to ESKernel
+Visualizer recieved a message: <message ProcName="ProcessTacts"/>
+Processing model tact
+Sending message to TemporalReasoner
+Configuring ESKernel
+Sending message to ESKernel
+Sending message to ESKernel
+Visualizer recieved a message: <message ProcName="ProcessTacts"/>
+Processing model tact
+Sending message to TemporalReasoner
+Configuring ESKernel
+Sending message to ESKernel
+Sending message to ESKernel
+Visualizer recieved a message: <message ProcName="ProcessTacts"/>
+Processing model tact
+Sending message to TemporalReasoner
+Configuring ESKernel
+Sending message to ESKernel
+Sending message to ESKernel
+Visualizer recieved a message: <message ProcName="ProcessTacts"/>
+Processing model tact
+Sending message to TemporalReasoner
+Configuring ESKernel
+Sending message to ESKernel
+Sending message to ESKernel
+Visualizer recieved a message: <message ProcName="ProcessTacts"/>
+Processing model tact
+Sending message to TemporalReasoner
+Configuring ESKernel
+Sending message to ESKernel
+Sending message to ESKernel
+Visualizer recieved a message: <message ProcName="ProcessTacts"/>
+Processing model tact
+Sending message to TemporalReasoner
+Configuring ESKernel
+Sending message to ESKernel
+Sending message to ESKernel
+Visualizer recieved a message: <message ProcName="ProcessTacts"/>
+Processing model tact
+Sending message to TemporalReasoner
+Configuring ESKernel
+Sending message to ESKernel
+Sending message to ESKernel
+Visualizer recieved a message: <message ProcName="ProcessTacts"/>
+Processing model tact
+Sending message to TemporalReasoner
+Configuring ESKernel
+Sending message to ESKernel
+Sending message to ESKernel
+Visualizer recieved a message: <message ProcName="ProcessTacts"/>
+Processing model tact
+Sending message to TemporalReasoner
+Configuring ESKernel
+Sending message to ESKernel
+Sending message to ESKernel
+Visualizer recieved a message: <message ProcName="ShowBB"/>

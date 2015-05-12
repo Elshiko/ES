@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<bb>
+  <wm>
+    <facts>
+      <fact AttrPath="Стакан.Состояние" Value="Пуст" Belief="50" MaxBelief="100" Accuracy="0" />
+      <fact AttrPath="Стакан.Имя" Value="Саша" Belief="50" MaxBelief="100" Accuracy="0" />
+      <fact AttrPath="Счетчик.Отчет" Value="Да" Belief="50" MaxBelief="100" Accuracy="0" />
+      <fact AttrPath="Счетчик.Секунды" Value="12" Belief="50" MaxBelief="100" Accuracy="0" />
+      <fact AttrPath="Счетчик.Индикатор" Value="33" Belief="50" MaxBelief="100" Accuracy="0" />
+    </facts>
+  </wm>
+  <temporalModel StepNum="12">
+    <events>
+      <eventTimes Name="Стакан_пуст">0 1 2 4 5 6 7 10 11 12</eventTimes>
+      <eventTimes Name="Стакан_полон">3 8 9</eventTimes>
+    </events>
+    <intervals>
+      <intervalTimes Name="Активность_Димы">(-1, -1);(0, 2)</intervalTimes>
+      <intervalTimes Name="Активность_Лёвы">(-1, -1);(2, 6)</intervalTimes>
+      <intervalTimes Name="Активность_Саши">(-1, -1)</intervalTimes>
+    </intervals>
+  </temporalModel>
+</bb>

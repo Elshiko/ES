@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<knowledge-base creation-date="01.04.2013 14:14:43">
+  <problem-info />
+  <types>
+    <type id="ТИП1" meta="string" desc="Оповещение">
+      <value>Дима наливает</value>
+      <value>Дима пьет</value>
+      <value>Лёва наливает</value>
+      <value>Лёва пьет</value>
+      <value>Саша наливает</value>
+      <value>Саша пьет</value>
+    </type>
+  </types>
+  <classes>
+    <class id="Лол" desc="Лол">
+      <properties>
+        <property id="Оповещение" type="Лол" desc="Оповещение" source="inferred" />
+      </properties>
+    </class>
+    <class id="world" desc="Класс верхнего уровня, включающий в себя экземпляры других классов и общие правила">
+      <properties>
+        <property id="Лол" type="Лол" source="none" create="true" desc="Лол" />
+      </properties>
+      <methods />
+      <rules>
+        <rule id="t1" meta="simple" desc="Т-правило">
+  <condition>
+    <eq>
+      <value>1</value>
+      <value>2</value>
+    </eq>
+  </condition>
+  <action>
+    <assign>
+      <ref id="Лол">
+        <ref id="Оповещение" />
+      </ref>
+      <value>Дима наливает</value>
+      <with belief="50" probability="100" accuracy="0" />
+    </assign>
+  </action>
+</rule>
+        <rule id="t2" meta="simple" desc="Т-правило">
+  <condition>
+    <eq>
+      <value>1</value>
+      <value>2</value>
+    </eq>
+  </condition>
+  <action>
+    <assign>
+      <ref id="Лол">
+        <ref id="Оповещение" />
+      </ref>
+      <value>Дима пьет</value>
+      <with belief="50" probability="100" accuracy="0" />
+    </assign>
+  </action>
+</rule>
+        <rule id="t3" meta="simple" desc="Т-правило">
+  <condition>
+    <eq>
+      <value>1</value>
+      <value>2</value>
+    </eq>
+  </condition>
+  <action>
+    <assign>
+      <ref id="Лол">
+        <ref id="Оповещение" />
+      </ref>
+      <value>Лёва наливает</value>
+      <with belief="50" probability="100" accuracy="0" />
+    </assign>
+  </action>
+</rule>
+        <rule id="t4" meta="simple" desc="Т-правило">
+  <condition>
+    <eq>
+      <value>1</value>
+      <value>2</value>
+    </eq>
+  </condition>
+  <action>
+    <assign>
+      <ref id="Лол">
+        <ref id="Оповещение" />
+      </ref>
+      <value>Лёва пьет</value>
+      <with belief="50" probability="100" accuracy="0" />
+    </assign>
+  </action>
+</rule>
+        <rule id="t5" meta="simple" desc="Т-правило">
+  <condition>
+    <eq>
+      <value>1</value>
+      <value>2</value>
+    </eq>
+  </condition>
+  <action>
+    <assign>
+      <ref id="Лол">
+        <ref id="Оповещение" />
+      </ref>
+      <value>Саша наливает</value>
+      <with belief="50" probability="100" accuracy="0" />
+    </assign>
+  </action>
+</rule>
+        <rule id="t6" meta="simple" desc="Т-правило">
+  <condition>
+    <eq>
+      <value>1</value>
+      <value>2</value>
+    </eq>
+  </condition>
+  <action>
+    <assign>
+      <ref id="Лол">
+        <ref id="Оповещение" />
+      </ref>
+      <value>Саша пьет</value>
+      <with belief="50" probability="100" accuracy="0" />
+    </assign>
+  </action>
+</rule>
+      </rules>
+    </class>
+  </classes>
+</knowledge-base>
