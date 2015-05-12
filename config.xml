@@ -28,6 +28,8 @@
 
 <object Name='IntegrationComponent' Class='IntegrationComponent.IntegrationComponent'>
 	<config>
+		<Log>integration_log.txt</Log>
+		<FileNameAT>TKBnewforAT</FileNameAT>
 	</config>
 </object>
 
