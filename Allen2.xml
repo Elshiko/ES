@@ -37,7 +37,7 @@
   <Open>
       <EqOp Value="eq">
         <Attribute Value="Стакан.Имя"/>
-        <String Value="Саши"/>
+        <String Value="Саша"/>
       </EqOp>    
   </Open>
   <Close>

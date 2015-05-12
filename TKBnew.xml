@@ -3,25 +3,37 @@
   <problem-info/>
   <types>
     <type id="ТИП1" meta="string" desc="Оповещение">
-      <value>Дима наливает</value>
-      <value>Дима пьет</value>
-      <value>Лёва наливает</value>
-      <value>Лёва пьет</value>
-      <value>Саша наливает</value>
-      <value>Саша пьет</value>
+      <value>Дима, наливай</value>
+      <value>Дима, пей</value>
+      <value>Лёва, наливай</value>
+      <value>Лёва, пей</value>
+      <value>Саша, наливай</value>
+      <value>Саша, пей</value>
+      <value>Ничего не нужно делать</value>
+    </type>
+    <type id="ТИП2" meta="number" desc="Время">
+      <from>0</from>
+      <to>1000000</to>
     </type>
   </types>
 
   <classes>
     <class id="Лол" desc="Лол">
       <properties>
-        <property id="Оповещение" type="Лол" desc="Оповещение" source="inferred"/>
+        <property id="Оповещение" type="ТИП1" desc="Оповещение" source="inferred"/>
+      </properties>
+    </class>
+
+    <class id="Счетчик" desc="Счетчик">
+      <properties>
+        <property id="Секунды" type="ТИП2" desc="Время" source="inferred"/>
       </properties>
     </class>
 
     <class id="world" desc="Класс верхнего уровня, включающий в себя экземпляры других классов и общие правила">
       <properties>
         <property id="Лол" type="Лол" source="none" create="true" desc="Лол"/>
+        <property id="Счетчик" type="Счетчик" source="none" create="true" desc="Лол"/>
       </properties>
       <rules>
 
@@ -37,7 +49,7 @@
               <ref id="Лол">
                 <ref id="Оповещение"/>
               </ref>
-              <value>Дима наливает</value>
+              <value>Дима, наливай</value>
               <with belief="50" probability="100" accuracy="0"/>
             </assign>
           </action>
@@ -55,7 +67,7 @@
               <ref id="Лол">
                 <ref id="Оповещение"/>
               </ref>
-              <value>Дима пьет</value>
+              <value>Дима, пей</value>
               <with belief="50" probability="100" accuracy="0"/>
             </assign>
           </action>
@@ -74,7 +86,7 @@
               <ref id="Лол">
                 <ref id="Оповещение"/>
               </ref>
-              <value>Лёва наливает</value>
+              <value>Лёва, наливай</value>
               <with belief="50" probability="100" accuracy="0"/>
             </assign>
           </action>
@@ -92,7 +104,7 @@
               <ref id="Лол">
                 <ref id="Оповещение"/>
               </ref>
-              <value>Лёва пьет</value>
+              <value>Лёва, пей</value>
               <with belief="50" probability="100" accuracy="0"/>
             </assign>
           </action>
@@ -110,7 +122,7 @@
               <ref id="Лол">
                 <ref id="Оповещение"/>
               </ref>
-              <value>Саша наливает</value>
+              <value>Саша, наливай</value>
               <with belief="50" probability="100" accuracy="0"/>
             </assign>
           </action>
@@ -128,7 +140,27 @@
               <ref id="Лол">
                 <ref id="Оповещение"/>
               </ref>
-              <value>Саша пьет</value>
+              <value>Саша, пей</value>
+              <with belief="50" probability="100" accuracy="0"/>
+            </assign>
+          </action>
+        </rule>
+
+        <rule id="t7" meta="simple" desc="B-правило">
+          <condition>
+            <eq>
+              <ref id="Счетчик">
+                <ref id="Секунды"/>
+              </ref>
+              <value>0</value>
+            </eq>
+          </condition>
+          <action>
+            <assign>
+              <ref id="Лол">
+                <ref id="Оповещение"/>
+              </ref>
+              <value>Ничего не нужно делать</value>
               <with belief="50" probability="100" accuracy="0"/>
             </assign>
           </action>

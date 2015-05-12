@@ -29,7 +29,7 @@
 <object Name='IntegrationComponent' Class='IntegrationComponent.IntegrationComponent'>
 	<config>
 		<Log>integration_log.txt</Log>
-		<FileNameAT>TKBnewforAT</FileNameAT>
+		<FileNameAT>TKBnewforAT.xml</FileNameAT>
 	</config>
 </object>
 
