@@ -6,13 +6,8 @@ subscenario Выход;
   stop;
 end;
 
-subscenario ЗапускРешателяПрямой;
-  send '<message ProcName="TSolve"/>' to TemporalReasoner;
-  send '<message ProcName="TSolve"/>' to ESKernel;
-end;
-
 subscenario RunIntegration;
-  send '<message ProcName="ProcessTacts"/>' to IntegrationComponent;
+  send '<message ProcName="ProcessTacts" />' to IntegrationComponent;
   send concat('output ', string(concat('Заключение"', #Лол.Оповещение#, '"')),
               'as String on Left') to Informer;
 
@@ -23,12 +18,16 @@ subscenario ShowBB;
   send '<message ProcName="ShowBB"/>' to IntegrationComponent;
 end;
 
+subscenario DropTemporalModel;
+  send '<message ProcName="DropTemporalModel"/>' to IntegrationComponent;
+end;
+
 message CreateMainForm to Alternativer
   line 'set Caption to $'Test$'';
   line 'set PictureFile to $'stakan.bmp$'';
   line 'on $'Файл/Выход$' execute Выход';
   line 'on $'Совместное функционирование/Один такт$' execute RunIntegration';
-  line 'on $'Совместное функционирование/Очистить темпоральную модель$' execute ShowBB';
+  line 'on $'Совместное функционирование/Очистить темпоральную модель$' execute DropTemporalModel';
   line 'on $'Совместное функционирование/Классная доска$' execute ShowBB';
 
   line 'activate';
